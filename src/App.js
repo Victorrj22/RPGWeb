@@ -1,13 +1,11 @@
 import React from 'react';
-import Sidebar from './Sidebar';
-import Conversation from './Conversation';
+import Register from './pages/Register';
+import "./App.css";
+import "./style.scss";
 
 const App = () => {
   return (
-    <div className="App">
-      <Sidebar />
-      {/* Outros componentes da sua página */}
-    </div>
+    <Register/>
   );
 }
 

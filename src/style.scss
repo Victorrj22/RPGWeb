@@ -1,0 +1,65 @@
+.FormsContainer{
+    background-color: greenyellow;
+    height: 100vh;  /*Altura da cor de fundo*/
+    display: flex;
+    align-items: center;    /*Alinha no centro*/
+    justify-content: center;    /*justifica no meio*/
+    font-family: Arial, Helvetica, sans-serif;
+
+    .FormsWrapper{
+        background-color: white; /*cor de fundo*/
+        padding: 20px 60px; /*tamanho do quadrado branco*/
+        border-radius: 20px; /*Arredondamento do quadrado branco*/
+        display: flex; /*Funciona em conjunto com flex-direction*/
+        flex-direction: column; /*Itens um embaixo do outro*/
+        gap: 2px;  /*Espaçamento entre os itens*/
+        align-items: center;    /*Alinhar itens no centro*/
+
+        .logo{
+            color: greenyellow; /*Cor do texto*/
+            font-weight: bold; /*tipo da fonte*/
+            font-size: 30px;    /*tamanho da fonte*/
+            
+
+        }
+
+        .titulo{
+            color: gray; /*Cor do texto*/
+            font-weight: bold; /*tipo da fonte*/
+            font-size: 20px; /*tamanho da fonte*/
+
+        }
+      form{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        input{
+            padding: 15px;
+            border: none;
+            width: 250px;
+            border-bottom: 1px solid gray;
+        }
+
+        button{
+            background-color: gray;
+            padding: 12px;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer; /*Aparece cursor quando coloca o mouse no botão*/
+        }
+
+        label{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #8da4f1;
+            font-size: 12px;
+            cursor: pointer;
+        }
+      }
+    }
+  
+}
+  
