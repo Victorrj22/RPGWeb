@@ -11,9 +11,9 @@ const Login = () => {
               <form>
                   <input type="email" placeholder='e-mail' />
                   <input type="password" placeholder='senha' />
-                  <button>Entrar</button>
+                  <Link to="/home"><button>Entrar</button></Link>
               </form>
-              <p>Ainda não tem uma conta? <Link to="/register">Registre-se</Link> </p>
+              <p className='linkregistro'>Ainda não tem uma conta? <Link to="/register">Registre-se</Link></p>
 
                
           </div>

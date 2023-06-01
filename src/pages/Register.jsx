@@ -1,5 +1,4 @@
 import React from 'react';
-import Login from './Login';
 import Add from "../img/Avatar.png";
 import {Link, Route, Routes} from 'react-router-dom';
 
@@ -21,7 +20,7 @@ const Register = () => {  {/*Atalho para esqueleto: 'rafce'*/}
                   </label>
                   <button>Inscrever-se</button> {/*Botão de inscrever*/}
               </form>
-              <p>Já tem uma conta? <Link to="/">Login</Link> </p>
+              <p className='linklogin'>Já tem uma conta? <Link to="/">Login</Link> </p>
           </div>
       </div>
   )

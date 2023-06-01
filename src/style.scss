@@ -5,9 +5,13 @@
     align-items: center;    /*Alinha no centro*/
     justify-content: center;    /*justifica no meio*/
     font-family: Arial, Helvetica, sans-serif;
+    display: flex; /*Funciona em conjunto com flex-direction*/
+    flex-direction: column; /*Itens um embaixo do outro*/
+    gap: 2px;  /*Espaçamento entre os itens*/
+    align-items: center;    /*Alinhar itens no centro*/
 
     .FormsWrapper{
-        background-color: white; /*cor de fundo*/
+        background-color: rgb(39, 39, 39); /*cor de fundo*/
         padding: 20px 60px; /*tamanho do quadrado branco*/
         border-radius: 20px; /*Arredondamento do quadrado branco*/
         display: flex; /*Funciona em conjunto com flex-direction*/
@@ -29,6 +33,18 @@
             font-size: 20px; /*tamanho da fonte*/
 
         }
+
+        .linkregistro{
+            color: white;
+        }
+
+        .linklogin{
+            color: white;
+        }
+
+        Link{
+            color: white;
+        }
       form{
         display: flex;
         flex-direction: column;
@@ -44,6 +60,7 @@
         button{
             background-color: gray;
             padding: 12px;
+            width: 300px;
             border-radius: 20px;
             color: white;
             font-weight: bold;
@@ -58,8 +75,73 @@
             font-size: 12px;
             cursor: pointer;
         }
+        }
       }
     }
   
+
+
+.home{
+    background-color: rgb(46, 46, 46);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container{
+        border: 1px solid white;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 80%;
+        height: 85%;
+        display: flex;
+
+        .sidebar{
+            flex: 1;
+            background-color: rgb(39, 39, 39);
+            
+            .navbar{
+                display: flex;
+                align-items: center;
+                background-color: rgb(0, 97, 0);
+                height: 30px;
+                padding: 10px;
+                justify-content: space-between;
+                color: rgb(255, 255, 255);
+
+                .logo{
+                    font-weight: bold;
+                }
+
+                .user{
+                    display: flex;
+                    gap: 10px;
+
+                    img{
+                        background-color: #ddddf7;
+                        height: 24px;
+                        width: 24px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    button{
+                        background-color: rgb(0, 248, 50);
+                        color: rgb(31, 31, 31);
+                        font-size: 10px;
+                        border: none;
+                        height: 20px;
+                        width: 40px;
+                        
+                    }
+                }
+
+    
+            }
+        
+        }
+
+        .chat{flex: 2;}
+    
+    }
 }
-  
